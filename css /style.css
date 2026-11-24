@@ -1,0 +1,290 @@
+css
+/* General page styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Style 1: Body typography and background */
+body {
+  margin: 0;
+  background-color: #f3f6fa;
+  color: #263445;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+/* Style 2: Shared horizontal navigation */
+nav {
+  background-color: #142d4e;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #9fc9f5;
+  text-decoration: underline;
+}
+
+/* Style 3: Shared header design */
+header {
+  background-color: #dce9f7;
+  color: #142d4e;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+header h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+/* Style 4: Shared section headings */
+section h2 {
+  color: #173d68;
+  border-bottom: 3px solid #8eb6df;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  color: #28557f;
+}
+
+/* Style 5: Shared section appearance */
+section {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(20, 45, 78, 0.08);
+}
+
+/* Style 6: Shared footer */
+footer {
+  background-color: #142d4e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* HOME PAGE */
+
+/* Style 1: Fluid home page layout */
+.home-page main {
+  width: 90%;
+  max-width: 70rem;
+  margin: 2rem auto;
+}
+
+/* Style 2: Home page paragraph spacing */
+.home-page section p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Style 3: Home page profile image */
+.home-page img {
+  display: block;
+  width: 60%;
+  max-width: 20rem;
+  height: auto;
+  margin: 1rem auto;
+  border: 4px solid #dce9f7;
+  border-radius: 12px;
+}
+
+/* Style 4: Home page section spacing */
+.home-page section {
+  padding: 2rem;
+}
+
+/* Style 5: Home page welcome heading */
+.home-page header h1 {
+  letter-spacing: 1px;
+  text-transform: none;
+}
+
+/* Style 6: Home page background accent */
+.home-page main section:nth-child(even) {
+  border-left: 5px solid #8eb6df;
+}
+
+/* RESUME PAGE */
+
+/* Style 1: Fixed-width resume layout */
+.resume-page main {
+  width: 850px;
+  max-width: 95%;
+  margin: 2rem auto;
+}
+
+/* Style 2: Resume header design */
+.resume-page header {
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #8eb6df;
+}
+
+.resume-page header p {
+  font-size: 0.9rem;
+}
+
+/* Style 3: Resume contact links */
+.resume-page header a {
+  color: #173d68;
+  font-weight: bold;
+}
+
+/* Style 4: Resume section headings */
+.resume-page section h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.15rem;
+}
+
+/* Style 5: Resume job and education headings */
+.resume-page section h3 {
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+/* Style 6: Resume list formatting */
+.resume-page section ul {
+  padding-left: 1.5rem;
+}
+
+.resume-page section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Style 7: Resume paragraph formatting */
+.resume-page section p {
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.92rem;
+}
+
+/* HOBBY PAGE */
+
+/* Style 1: Fluid hobby page layout */
+.hobby-page main {
+  width: 90%;
+  max-width: 70rem;
+  margin: 2rem auto;
+}
+
+/* Style 2: Tennis-inspired heading colors */
+.hobby-page section h2 {
+  color: #276344;
+  border-bottom-color: #8fc49c;
+}
+
+/* Style 3: Tennis image presentation */
+.hobby-page section img {
+  width: 45%;
+  max-width: 25rem;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1rem 1%;
+  border: 4px solid #d8eadb;
+  border-radius: 12px;
+}
+
+/* Style 4: Hobby list formatting */
+.hobby-page section ul {
+  padding-left: 2rem;
+}
+
+.hobby-page section li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Style 5: Audio player presentation */
+.hobby-page audio {
+  width: 100%;
+  max-width: 30rem;
+  margin-top: 1rem;
+}
+
+/* Style 6: Tennis section accent */
+.hobby-page section {
+  border-left: 5px solid #8fc49c;
+}
+
+/* Style 7: Tennis header accent */
+.hobby-page header {
+  background-color: #e1efe3;
+  color: #24543a;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 600px) {
+  nav ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  .home-page main,
+  .hobby-page main {
+    width: 95%;
+  }
+
+  .resume-page main {
+    width: 95%;
+  }
+
+  .home-page section,
+  .hobby-page section {
+    padding: 1rem;
+  }
+
+  .home-page img {
+    width: 85%;
+  }
+
+  .hobby-page section img {
+    width: 95%;
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .resume-page header p {
+    overflow-wrap: anywhere;
+  }
+}

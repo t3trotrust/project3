@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago Map</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"
+      async
+      defer>
+    </script>
+  </head>
+  <body class="map-page">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="page3.html">My Hobby</a></li>
+        <li><a href="map.html">Map</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Explore Chicago</h1>
+      <p>
+        Explore some places around Chicago using the interactive
+        Google Maps feature below.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <!-- Style 1 -->
+        <h2>Interactive Chicago Map</h2>
+        <p>
+          Click on the map markers to learn more about each location.
+          You can also zoom in, zoom out, and switch between map views.
+        </p>
+        <div id="map"></div>
+      </section>
+
+      <section>
+        <!-- Style 2 -->
+        <h2>Locations on the Map</h2>
+        <ul>
+          <li>Illinois Institute of Technology</li>
+          <li>Millennium Park</li>
+          <li>Grant Park</li>
+        </ul>
+      </section>
+
+      <section>
+        <!-- Style 3 -->
+        <h2>Explore the Map</h2>
+        <p>
+          The map lets visitors explore locations throughout Chicago.
+          Each marker contains information about the location.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Created by Harold Ho</p>
+      <button id="questions-button" type="button">Questions?</button>
+    </footer>
+  </body>
+</html>
